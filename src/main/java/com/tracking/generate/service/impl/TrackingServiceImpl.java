@@ -1,6 +1,6 @@
 package com.tracking.generate.service.impl;
 
-import com.tracking.generate.Utility;
+import com.tracking.generate.utility.Utility;
 import com.tracking.generate.contoller.request.ParcelRequest;
 import com.tracking.generate.contoller.response.TrackingResponse;
 import com.tracking.generate.entity.ParcelDetails;
@@ -28,7 +28,6 @@ public class TrackingServiceImpl implements TrackingService {
     public CompletableFuture<TrackingResponse> generateTrackingNumber(ParcelRequest request) {
         log.info("Request received={}", request);
         String trackingNumber = Utility.generateTrackingNumber();
-        Utility.createdRFC3339FormatDate();
         ParcelDetails parcelDetails = repository.save(TrackingMapper.INSTANCE.toTracking(request, trackingNumber));
         TrackingResponse tackingResponse = TrackingMapper.INSTANCE.toTrackingResponse(parcelDetails, trackingNumber);
         log.info("Tracking Response={}", tackingResponse);

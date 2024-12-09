@@ -28,3 +28,8 @@ This api is insecure because of there is no security configuration implemented.
     "trackingNumber": "TW87NFCMU3IH7DI3",
     "createdAt": "2024-12-07T23:55:07 05:30"
     }
+
+### H2 DB local connect
+    URL : http://localhost:8080/h2-console/login.do?jsessionid=da0f9f7c6aed499919ff4848ff901405
+    username: sa
+    password: password

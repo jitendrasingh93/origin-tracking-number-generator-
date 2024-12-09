@@ -1,6 +1,6 @@
 package com.tracking.generate.mapper;
 
-import com.tracking.generate.Utility;
+import com.tracking.generate.utility.Utility;
 import com.tracking.generate.contoller.request.ParcelRequest;
 import com.tracking.generate.contoller.response.TrackingResponse;
 import com.tracking.generate.entity.ParcelDetails;
