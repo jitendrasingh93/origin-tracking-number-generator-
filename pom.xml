@@ -116,6 +116,7 @@
 				</configuration>
 			</plugin>
 		</plugins>
+		<finalName>tracking-number-generator</finalName>
 	</build>
 
 </project>
