@@ -7,7 +7,7 @@ This application will generate the unique tracking number with to accept require
 This api is insecure because of there is no security configuration implemented.
 ### Application local setup in IDE/run
     1. Minimum Java 17 required to run this application.
-    2. Extract zip file then Import any IDE.
+    2. Extract zip file OR use "git clone git@github.com:jitendrasingh93/tracking-number-generator.git" then Import any IDE.
     3. Use 'mvn clean install' cmmand to build the project.
     4. Start the application using right click on 'TrackingNumberGeneratorApplication.java'
     5. Application started on port 8080.
@@ -16,7 +16,7 @@ This api is insecure because of there is no security configuration implemented.
 
 
 ### Run with command line
-    1. Extract zip file.
+    1. Download and Extract zip file Or used "git clone git@github.com:jitendrasingh93/tracking-number-generator.git" to clone the repo.
     2. Goto /tracking-number-generator/target path
     3. Run this cmd : java -jar traking-number-generator-0.0.1-SNAPSHOT.jar
     4. Application started on port 8080.
