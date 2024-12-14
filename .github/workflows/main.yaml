@@ -1,14 +1,5 @@
 name: build and deploy tracking-number-generator
-on:
-  push:
-    branches:
-      - master
-  pull_request:
-    paths:
-      - 'tracking-number-generator/**'
-    types:
-      - opened
-
+on: [push, pull_request]
 jobs:
   build-deploy:
     name: build and deploy
