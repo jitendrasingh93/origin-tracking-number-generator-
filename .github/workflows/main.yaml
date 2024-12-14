@@ -2,7 +2,10 @@ name: build and deploy tracking-number-generator
 on:
   push:
     branches:
-      - cicd_config
+      - master
+  pull_request:
+    branches:
+      - 'tracking-number-generator/**'
 
 jobs:
   build-deploy:
