@@ -1,5 +1,9 @@
 name: build and deploy tracking-number-generator
-on: [push, pull_request]
+on:
+  push:
+    branches:
+      - master
+
 jobs:
   build-deploy:
     name: build and deploy
@@ -39,7 +43,7 @@ jobs:
           context: .
           dockerfile: Dockerfile
           push: false
-          tags: ${{ secrets.DOCKER_HUB_USERNAME }}/app:v1.0.0
+          tags: ${{ secrets.DOCKER_HUB_USERNAME }}/app:latest
 
       - name: login to docker hub
         uses: docker/login-action@v1
@@ -53,4 +57,4 @@ jobs:
           context: .
           dockerfile: Dockerfile
           push: true
-          tags: ${{ secrets.DOCKER_HUB_USERNAME }}/tracking-number-generator:v1.0.0
+          tags: ${{ secrets.DOCKER_HUB_USERNAME }}/tracking-number-generator:latest
